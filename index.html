@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,
+                 user-scalable=no">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <title>黑马面面</title>
+    <!--1、引入normalize.css (注意版本号：这里是8.0.1，低于这个版本可能样式会有问题)-->
+    <link rel = "stylesheet" href = "./css/normalize.css">
+    <link rel = "stylesheet" href = "./css/index.css">      <!--2、创建less并初始化body样式-->
+    <link rel = "stylesheet" href = "./css/swiper.min.css"> <!--就业指导--引入轮播图样式-->
+    <style>
+    </style>
+</head>
+<body>
+<section class = "bgColor">
+    <!-- 头部区域 -->
+    <header class = "header">黑马面面</header>
+    <!--导航栏-->
+    <nav class = "nav">
+        <a href = "#" class = "aItem">
+            <img src = "./icons/icon1.png" alt = "">
+            <span>HR面试</span>
+        </a>
+        <a href = "#" class = "aItem">
+            <img src = "./icons/icon2.png" alt = "">
+            <span>笔试</span>
+        </a>
+        <a href = "#" class = "aItem">
+            <img src = "./icons/icon3.png" alt = "">
+            <span>技术面试</span>
+        </a>
+        <a href = "#" class = "aItem">
+            <img src = "./icons/icon4.png" alt = "">
+            <span>模拟面试</span>
+        </a>
+        <a href = "#" class = "aItem">
+            <img src = "./icons/icon5.png" alt = "">
+            <span>面试技巧</span>
+        </a>
+        <a href = "#" class = "aItem">
+            <img src = "./icons/icon6.png" alt = "">
+            <span>薪资查询</span>
+        </a>
+    </nav>
+    <!--go模块-->
+    <section class = "go">
+        <img src = "./images/go.png" alt = "">
+    </section>
+</section>
+
+<!--就业指导模块和充电学习模块（大样式相同，可以写一起）-->
+<section class="content-pub">
+    <div class="content-header">
+        <h4>
+            <span class="icon"><img src = "./icons/i2.png" alt = ""></span>
+            就业指导
+        </h4>
+        <a href="#" class="more">更多>></a>
+    </div>
+    
+    <!-- Swiper--><!--旋转木马轮播图模块-->
+    <div class="carousel-chart">
+        <div class="swiper-container pic-border">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src = "./images/pic.png" alt = ""></a>
+                    <p>老师教你应对面试技巧</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src = "./images/ldh.jpg" alt = ""></a>
+                    <p>刘老师的热切关注</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src = "./images/cc1.png" alt = ""></a>
+                    <p>毕业季</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src = "./images/3.jpg" alt = ""></a>
+                    <p>对当前现象的思考</p>
+                </div>
+            </div>
+            
+            <!--<div class="swiper-button-next"></div>   添加左箭头  本样例需要放在容器外部-->
+            <!--<div class="swiper-button-prev"></div>   添加右箭头  本样例需要放在容器外部-->
+            <!--<div class="swiper-pagination"></div>  //本样例不需要导航圆点-->
+        </div>
+        <div class="swiper-button-next"></div>   <!--添加左箭头-->
+        <div class="swiper-button-prev"></div>   <!--添加右箭头-->
+    </div>
+</section>
+<!--充电学习模块（直接复制上面就业指导模块的就行）-->
+<section class="content-pub study-content">
+    <div class="content-header">
+        <h4>
+            <span class="icon"><img src = "./icons/i2.png" alt = ""></span>
+            充电学习
+        </h4>
+        <a href="#" class="more">更多>></a>
+    </div>
+    
+    <!-- Swiper--><!--学习模块的轮播图模块-->
+    <div class="study">
+        <div class="swiper-container study-pic">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src = "./images/pic1.png" alt = "">
+                    <h5>说地道英语，告别中式英语</h5>
+                    <p>156人学习</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src = "./images/pic2.png" alt = "">
+                    <h5>思维攻略金字塔思维提升写作能力</h5>
+                    <p>125人学习</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src = "./images/pic1.png" alt = "">
+                    <h5>Xmind零基础学习</h5>
+                    <p>86人学习</p>
+                </div>
+            </div>
+            
+            <!-- Add Pagination
+            <div class="swiper-pagination"></div>
+            -->
+        </div>
+    </div>
+</section>
+
+<!--页脚-->
+<footer class="footer">
+    <a href="#" class="faItems">
+        <img src = "./icons/home.png" alt = "">
+        <p>首页</p>
+    </a>
+    <a href="#" class="faItems">
+        <img src = "./icons/ms.png" alt = "">
+        <p>模拟面试</p>
+    </a>
+    <a href="#" class="faItems">
+        <img src = "./icons/net.png" alt = "">
+        <p>技术面试</p>
+    </a>
+    <a href="#" class="faItems">
+        <img src = "./icons/user.png" alt = "">
+        <p>我的首页</p>
+    </a>
+</footer>
+
+<script src = "./js/flexible.js"></script> <!--3、引入flexible.js文件，自动页面10等分，进行rem自动适配-->
+<script src="./js/swiper.min.js"></script> <!--引入轮播图的js文件-->
+<!-- Initialize Swiper -->
+<script>
+    /*自调用函数的 就业指导--轮播图*/
+    (function () {
+        var swiper = new Swiper('.pic-border', {   /*多个轮播图类名必须分开*/
+            slidesPerView: 2,  /*显示图片的个数*/
+            spaceBetween: 30,  /*图片的距离*/
+            centeredSlides: true,   /*最大图片是否居中显示*/
+            loop: true,
+           /*   本样例不需要导航圆点
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },*/
+            
+            /*添加两边的点击左右箭头*/
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }());
+    
+    /*自调用函数的 学习充电--轮播图*/
+    (function () {
+        var swiper = new Swiper('.study-pic', {   /*多个轮播图类名必须分开*/
+            slidesPerView: 2.2,   /*设置可以看到的图片是2个半*/
+            spaceBetween: 20,
+            /*pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },*/
+        });
+    }());
+    
+</script>
+
+</body>
+</html>
